@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBSPU | Purvanchal University - Modern Portal</title>
+    <style>
+        /* CSS Reset & Basics */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f9f9f9; color: #333; }
+        .container { width: 90%; margin: auto; }
+
+        /* Header & Navigation */
+        header { background: #002147; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo h2 { color: #ffcc00; font-size: 24px; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav ul li a:hover { color: #ffcc00; }
+
+        /* Hero Section with Animation */
+        .hero { 
+            background: linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80');
+            height: 500px; background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin-bottom: 25px; }
+        .btn-group .btn { 
+            padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin: 10px; display: inline-block;
+        }
+        .btn-primary { background: #ffcc00; color: #002147; }
+        .btn-secondary { background: transparent; border: 2px solid white; color: white; }
+
+        /* Stats Section */
+        .stats { display: flex; justify-content: space-around; padding: 50px 0; background: white; text-align: center; }
+        .stat-box h2 { color: #002147; font-size: 2.5rem; }
+        .stat-box p { color: #666; font-weight: bold; }
+
+        /* Student Login & Contact Form Grid */
+        .portal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 50px 0; }
+        .form-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .form-card h3 { margin-bottom: 20px; color: #002147; border-bottom: 2px solid #ffcc00; display: inline-block; }
+        input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+        .submit-btn { background: #002147; color: white; border: none; padding: 10px 20px; cursor: pointer; width: 100%; border-radius: 5px; }
+
+        /* Gallery/Courses */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+        .course-card { background: #fff; overflow: hidden; border-radius: 10px; text-align: center; transition: 0.3s; }
+        .course-card:hover { transform: translateY(-10px); }
+        .course-card img { width: 100%; height: 200px; object-fit: cover; }
+        .course-card h4 { padding: 15px; color: #002147; }
+
+        /* Footer */
+        footer { background: #111; color: white; padding: 40px 0; text-align: center; }
+        .social-links { margin-bottom: 20px; }
+        .social-links a { color: #ffcc00; margin: 0 10px; text-decoration: none; }
+.contact-line{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    margin-bottom:3px;
+   
+
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo"><h2>VBSPU <span>OFFICIAL</span></h2></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#admission">Admission</a></li>
+                    <li><a href="#exams">Exams</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Veer Bahadur Singh Purvanchal University</h1>
+        <p>A Premier University providing quality education and excellence in research since 1987.</p>
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary">Student Portal</a>
+            <a href="#" class="btn btn-secondary">Download Syllabus</a>
+        </div>
+    </section>
+
+    <section class="stats container">
+        <div class="stat-box"><h2>500+</h2><p>Colleges</p></div>
+        <div class="stat-box"><h2>1M+</h2><p>Students</p></div>
+        <div class="stat-box"><h2>150+</h2><p>Courses</p></div>
+    </section>
+
+    <section class="container" id="admission">
+        <div class="portal-grid">
+            <div class="form-card">
+                <h3>Student Login</h3>
+                <form>
+                    <input type="text" placeholder="Roll Number / Registration ID" required>
+                    <input type="password" placeholder="Password" required>
+                    <button class="submit-btn">Login to Dashboard</button>
+                    <p style="margin-top:10px; font-size: 14px;"><a href="#">Forgot Password?</a></p>
+                </form>
+            </div>
+
+            <div class="form-card">
+                <h3>Quick Enquiry</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4"></textarea>
+                    <button class="submit-btn" style="background: #e44d26;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container" id="gallery" style="padding-bottom: 50px;">
+        <h2 style="text-align: center; color: #002147; margin-bottom: 30px;">Popular Departments</h2>
+        <div class="grid-3">
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=60" alt="Engineering">
+                <h4>Faculty of Engineering</h4>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=500&q=60" alt="Management">
+                <h4>Management Studies</h4>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=500&q=60" alt="Science">
+                <h4>Applied Social Sciences</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a> | <a href="#">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Veer Bahadur Singh Purvanchal University, Jaunpur (U.P.)</p>
+        <p style="font-size: 12px; color: #777; margin-top: 10px;">Developed for Project Demo</p>
+
+<section class="container" id="exams" style="padding: 50px 0;">
+    <h2 style="text-align: center; color: white; margin-bottom: 20px;">Check Examination Results</h2>
+    
+    <div class="form-card" style="max-width: 600px; margin: 0 auto 40px auto; text-align: center;">
+        <p style="margin-bottom: 15px; font-weight: bold;">Enter your details to view result</p>
+        <div style="display: flex; gap: 10px;">
+            <input type="text" placeholder="Enter Roll Number" style="margin: 0;">
+            <select style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                <option>Select Semester</option>
+                <option>1st Semester</option>
+                <option>2nd Semester</option>
+                <option>3rd Semester</option>
+                <option>4th Semester</option>
+                <option>5th Semester</option>
+                <option>6th Semester</option>
+            </select>
+            <button class="submit-btn" style="width: auto; white-space: nowrap;">Search</button>
+        </div>
+    </div>
+
+    <div class="result-table-container" style="overflow-x: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        <h4 style="margin-bottom: 15px; color: #e44d26;">Latest Declared Results (2025-26)</h4>
+        <table style="width: 100%; border-collapse: collapse; text-align: left;">
+            <thead>
+                <tr style="background: #002147; color: white;">
+                    <th style="padding: 15px; border: 1px solid #eee;">Course Name</th>
+                    <th style="padding: 15px; border: 1px solid #eee;">Semester/Year</th>
+                    <th style="padding: 15px; border: 1px solid #eee;">Release Date</th>
+                    <th style="padding: 15px; border: 1px solid #eee;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #eee;">B.Tech (Computer Science)</td>
+                    <td style="padding: 12px; border: 1px solid #eee;">7th Semester</td>
+                    <td style="padding: 12px; border: 1px solid #eee;">Jan 02, 2026</td>
+                    <td style="padding: 12px; border: 1px solid #eee;"><a href="#" style="color: #002147; font-weight: bold; text-decoration: none;">Click Here</a></td>
+                </tr>
+                <tr style="background: #fdfdfd;">
+                    <td style="padding: 12px; border: 1px solid #eee;">B.Sc (Agriculture)</td>
+                    <td style="padding: 12px; border: 1px solid #eee;">3rd Year</td>
+                    <td style="padding: 12px; border: 1px solid #eee;">Dec 28, 2025</td>
+                    <td style="padding: 12px; border: 1px solid #eee;"><a href="#" style="color: #002147; font-weight: bold; text-decoration: none;">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #eee;">MBA</td>
+                    <td style="padding: 12px; border: 1px solid #eee;">1st Semester</td>
+                    <td style="padding: 12px; border: 1px solid #eee;">Dec 24, 2025</td>
+                    <td style="padding: 12px; border: 1px solid #eee;"><a href="#" style="color: #002147; font-weight: bold; text-decoration: none;">Click Here</a></td>
+                </tr>
+                <tr style="background: #fdfdfd;">
+                    <td style="padding: 12px; border: 1px solid #eee;">M.A. (History)</td>
+                    <td style="padding: 12px; border: 1px solid #eee;">Final Year</td>
+                    <td style="padding: 12px; border: 1px solid #eee;">Dec 20, 2025</td>
+                    <td style="padding: 12px; border: 1px solid #eee;"><a href="#" style="color: #002147; font-weight: bold; text-decoration: none;">Click Here</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="container" id="contact" style="padding:50px 0;">
+    <h2 style="text-align:center; color:white; margin-bottom:20px;">Contact Us</h2>
+    <div class="form-card" style="padding:30px; max-width:700px; margin:auto; background:white; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+        
+        <h3 style="color:#002147; margin-bottom:15px;">Veer Bahadur Singh Purvanchal University</h3>
+        
+        <div class="contact-line">
+    
+    <span>
+        Shaganj Road, Siddiquepur, Jaunpur,
+        Uttar Pradesh – 222003, India
+    </span>
+</div>
+
+<div class="contact-line">
+
+    <span>05452-252222</span>
+</div>
+
+        <p><strong> Contact</strong> <a href="https://www.vbspu.ac.in/en/page/officers-contact" style="color:#002147; text-decoration:underline;">
+         Officers-Contact</a></p>
+
+        <hr style="border-top:1px solid #ddd; margin:25px 0;">
+
+        <h3 style="color:#002147; margin-bottom:15px;">Send Us a Message</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4"></textarea>
+            <button class="submit-btn" style="background:#e44d26;">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    </footer>
+
+</body>
+</html>
